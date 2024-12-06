@@ -65,7 +65,7 @@ def calc(input_line):
         return "Ошибка: Несбалансированные скобки"
 
     try:
-        numeric_result = eval(expression) # *ОПАСНОСТЬ*: eval небезопасен!
+        numeric_result = eval(expression) 
     except (TypeError, ValueError, ZeroDivisionError, SyntaxError, NameError) as e:
         return f"Ошибка вычисления: {e}"
 
